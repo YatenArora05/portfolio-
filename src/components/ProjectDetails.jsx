@@ -32,17 +32,29 @@ const ProjectDetails = ({
             <div className="flex gap-3">
               {tags.map((tag) => (
                 <img
-                  key={tag.id}
-                  src={tag.path}
-                  alt={tag.name}
-                  className="rounded-lg size-10 hover-animation"
+                  // key={tag.id}
+                  // src={tag.path}
+                  // alt={tag.name}
+                  // className="rounded-lg size-10 hover-animation"
                 />
               ))}
             </div>
-            <a className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation">
-              View Project{" "}
-              <img src="assets/arrow-up.svg" className="size-4" href={href} />
-            </a>
+            {href ? (
+              <a 
+                href={href} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"
+              >
+                View Project{" "}
+                <img src="assets/arrow-up.svg" className="size-4" />
+              </a>
+            ) : (
+              <span className="inline-flex items-center gap-1 font-medium text-neutral-500">
+                View Project{" "}
+                <img src="assets/arrow-up.svg" className="size-4" />
+              </span>
+            )}
           </div>
         </div>
       </motion.div>

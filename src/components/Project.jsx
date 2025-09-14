@@ -28,6 +28,7 @@ const Project = ({
         </div>
         <button
           onClick={() => setIsHidden(true)}
+          // href="https://github.com/YatenArora05/Chat-App"
           className="flex items-center gap-1 cursor-pointer hover-animation"
         >
           Read More
