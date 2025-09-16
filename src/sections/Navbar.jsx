@@ -14,7 +14,7 @@ function Navigation() {
         </a>
       </li>
       <li className="nav-li">
-        <a className="nav-link font-semibold text-lg tracking-wide transition-all duration-300 hover:text-royal hover:scale-105" href="https://drive.google.com/file/d/11tgQS3R8CbXYitQFwPmjIUXJYzwgqYFU/view?usp=drive_link">
+        <a className="nav-link font-semibold text-lg tracking-wide transition-all duration-300 hover:text-royal hover:scale-105" href="/off_campus_resume.pdf" download="Yaten_Arora_Resume.pdf">
           Resume
         </a>
       </li>
@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-2 sm:py-0">
           <a
             href="/"
-            className="text-2xl font-extrabold transition-all duration-300 text-transparent bg-clip-text bg-gradient-to-r from-aqua via-mint to-royal hover:from-royal hover:via-fuchsia hover:to-aqua hover:scale-105 tracking-wide"
+            className="text-2xl font-extrabold transition-all duration-300 text-white hover:scale-105 tracking-wide"
           >
              Yaten Arora 
           </a>
